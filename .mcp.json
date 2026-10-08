@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "jira": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "JIRA_BASE_URL": "https://xbrainvn.atlassian.net",
+        "JIRA_EMAIL": "${JIRA_EMAIL}",
+        "JIRA_API_TOKEN": "${JIRA_API_TOKEN}",
+        "JIRA_DEFAULT_PROJECT": "${JIRA_DEFAULT_PROJECT:-XAI}"
+      }
+    }
+  }
+}
